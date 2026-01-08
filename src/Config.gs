@@ -12,8 +12,8 @@ function getConfig_() {
     BODY_CHARS: parseInt(p.getProperty('BODY_CHARS') || '1200', 10),
     DRY_RUN: (p.getProperty('DRY_RUN') || 'false').toLowerCase() === 'true',
     DEBUG: (p.getProperty('DEBUG') || 'false').toLowerCase() === 'true',
-    MODEL_PRIMARY: 'gemini-2.5-flash',
-    MODEL_ESCALATE: 'gemini-2.5-pro',
+    MODEL_PRIMARY: 'gemini-flash-latest',
+    MODEL_ESCALATE: 'gemini-pro-latest',
     // Agents framework
     AGENTS_ENABLED: (p.getProperty('AGENTS_ENABLED') || 'true').toLowerCase() === 'true',
     AGENTS_DRY_RUN: (p.getProperty('AGENTS_DRY_RUN') || '').toLowerCase() === 'true' ? true : ((p.getProperty('AGENTS_DRY_RUN') || '').toLowerCase() === 'false' ? false : null),
